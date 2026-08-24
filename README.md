@@ -1,16 +1,40 @@
-<!--https://www.makeareadme.com/ -->
-# Prosper Loan Analysis
+# Prosper Loan Data Analysis
+
+An exploratory analysis of Prosper peer-to-peer loan data, focused on how lending activity, borrower characteristics, interest rates, and outcomes changed around the 2008 financial crisis.
+
+## Questions explored
+
+- How did loan volume and funded amounts change over time?
+- How did borrower rates and loan outcomes evolve after 2008?
+- Which loan purposes became more common?
+- What distinguishes debt-consolidation loans from other borrowing?
+
+## Key findings
+
+- Loan counts and funded amounts fell sharply after the financial crisis, then recovered and reached their highest levels in the dataset by 2013.
+- Borrower rates increased after 2008 before beginning to decline around 2011.
+- Default rates were highest among the earliest cohorts and declined as completed loans became more common.
+- Debt consolidation became the dominant stated purpose, representing roughly 80% of loans by 2013.
+- Debt-consolidation borrowing became more prevalent as the number of open credit lines increased.
+
+These results are descriptive patterns in the available data and should not be interpreted as causal effects.
 
 ## Dataset
 
-The data consists of information regarding loan requests provided by prosper, The dataset can be found [here](https://www.kaggle.com/yousuf28/prosper-loan),
-with feature documentation available [here](https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0).
+The analysis uses the [Prosper Loan dataset](https://www.kaggle.com/datasets/yousuf28/prosper-loan). Variable definitions are available in the accompanying [feature documentation](https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0).
 
+## Analysis workflow
 
-## Summary of Findings
+1. Assess data quality and select relevant variables.
+2. Explore loan activity and pricing over time.
+3. Compare loan status and purpose distributions.
+4. Investigate debt-consolidation behavior in greater depth.
+5. Communicate the main patterns through explanatory visualizations.
 
-In the exploration, I tracked the loan features change over the years, focusing on the impact after 2008 financial crisis. After 2008 there was a sharp decline in # of loans and the amount of money lended, then a ste increase in both metircs, reaching the maximum by 2013, also, there was an increase in loan rate after 2008, which is expected, then it started to decline after 2011.Loan defaulted was the highest in 2006, started to decline sharply since 2009 with more completed loans, because after 2008 the debt consolidation is the # 1 reason for asking for loans, by 2013 it represented around 80% of the # of loans.
+## Tools
 
-I digged deeper in the debt consolidation loans, trying to understand when people tend to request debt consolidation loan. Non debt consolidation seems bi-modal, which make sense, people don't take loans because either they don't have open credit items or they don't like the idea and starting from 7 open items we see an increase in the % of dept consolidation. 
+Python, pandas, NumPy, Matplotlib, Seaborn, and Jupyter Notebook.
 
+## Limitations
 
+The dataset represents Prosper applicants rather than the broader credit market. Later loans also have less time to reach a final outcome, so comparisons of defaults across origination years require care.
